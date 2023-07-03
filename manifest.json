@@ -1,0 +1,36 @@
+{
+    "manifest_version": 3,
+    "name": "Asp Extract",
+    "description": "Extension to extract \".AspNet.Cookies\" for use in external applications",
+    "version": "1.3.0",
+    "icons": {
+        "16": "img/icon-16.png",
+        "32": "img/icon-32.png",
+        "48": "img/icon-48.png",
+        "128": "img/icon-128.png"
+    },
+    "action": {
+        "default_icon": {
+            "16": "img/icon-16.png",
+            "32": "img/icon-32.png",
+            "48": "img/icon-48.png",
+            "128": "img/icon-128.png"
+        },
+        "default_title": "Press for .AspNet.Cookies value"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "activeTab",
+        "clipboardWrite",
+        "cookies",
+        "scripting"
+    ],
+    "host_permissions": [
+        "*://unl.collegescheduler.com/*"
+    ],
+    "homepage_url": "https://github.com/blaine-t/asp-extract",
+    "incognito": "split",
+    "minimum_chrome_version": "88"
+}
